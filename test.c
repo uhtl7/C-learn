@@ -136,12 +136,18 @@
 //    printf("%d", n);
 //    return 0;
 // }  
-int main() {
-    void *a[] = {(void *)1, (void *)2, (void *)3, (void *)4, (void *)5};
-    printf("%d\n", *((char *)a + 1));
-    printf("%d\n", *(int *)(char *)a + 1);
-    printf("%d\n", *((int *)a + 2));
-    printf("%lld\n", *((long long *)a + 3));
-    printf("%d\n", *((short *)a + 4));
+// int main() {
+//     void *a[] = {(void *)1, (void *)2, (void *)3, (void *)4, (void *)5};
+//     printf("%d\n", *((char *)a + 1));
+//     printf("%d\n", *(int *)(char *)a + 1);
+//     printf("%d\n", *((int *)a + 2));
+//     printf("%lld\n", *((long long *)a + 3));
+//     printf("%d\n", *((short *)a + 4));
+//     return 0;
+// }
+int main()
+{
+    int * p=4;
+    printf("%zu %zu\n",sizeof(p),sizeof(*p));
     return 0;
 }
