@@ -145,9 +145,3 @@
 //     printf("%d\n", *((short *)a + 4));
 //     return 0;
 // }
-int main()
-{
-    int * p=4;
-    printf("%zu %zu\n",sizeof(p),sizeof(*p));
-    return 0;
-}
