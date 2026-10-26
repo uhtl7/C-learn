@@ -48,6 +48,40 @@ int main()
 
 
 #include<stdio.h>
+int main()
+{
+    int x=0;
+    scanf("%d",&x);
+    printf("%c",x);
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    double x=0.0;
+    printf("Enter a floating-point value:");
+    scanf("%lf",&x);
+    printf("fixed-point notation: %.6lf\n",x);
+    printf("exponential notation: %e\n",x);
+    printf("p notation: %a\n",x);
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    int age=0;
+    double seconds=0.0;
+    scanf("%d",&age);
+    seconds=age*3.156e7;
+    printf("%g",seconds);
+    return 0;
+}
+
+
+
+#include<stdio.h>
 #include<string.h>
 int main()
 {
