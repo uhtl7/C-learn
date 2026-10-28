@@ -344,6 +344,319 @@
 
 
 
+// #include<stdio.h>
+// int main()
+// {
+//     int ch;
+//     int n=0;
+//     while((ch=getchar())!=EOF)
+//     {
+//         n++;
+//     }
+//     printf("\n%d",n);
+//     return 0;
+// }
+
+// #include<stdio.h>
+// void meau()
+// {
+//     int ch;
+//     printf("Enter the operation of your choice:\n");
+//     printf("a.add                 s.subtract\n");
+//     printf("m.multiply            d.divide\n");
+//     printf("q.quit\n");
+
+// }
+// float get_int()
+// {
+//     char ch;
+//     float n;
+//     while(scanf("%f",&n)!=1)
+//     {
+//         while((ch=getchar())!='\n')
+//           putchar(ch);
+//         printf(" is not a number.\n");
+//         printf("please enter a number,such as 2.5 , -1.78E8 , or 3:");  
+//     }
+//     return n;
+// }
+// void Add()
+// {
+//     printf("Enter first number:");
+//     float n=get_int();
+//     printf("Enter second number:");
+//     float m=get_int();
+//     printf("%g + %g = %g\n",n,m,n+m);
+//     meau();
+// }
+// void Sub()
+// {
+//     printf("Enter first number:");
+//     float n=get_int();
+//     printf("Enter second number:");
+//     float m=get_int();
+//     printf("%g - %g = %g\n",n,m,n-m);
+//     meau();
+// }
+// void Mul()
+// {
+//     printf("Enter first number:");
+//     float n=get_int();
+//     printf("Enter second number:");
+//     float m=get_int();
+//     printf("%g / %g = %g\n",n,m,n/m);
+//     meau();
+// }
+// void Div()
+// {
+//     printf("Enter first number:");
+//     int n=get_int();
+//     printf("Enter second number:");
+//     int m=get_int();
+//     printf("%d %% %d = %d\n",n,m,n%m);
+//     meau();
+// }
+// int main()
+// {
+//     int ch;
+//     meau();
+//     while((ch=getchar())!='q')
+//     {
+//         switch(ch)
+//         {
+//             case 'a':Add();
+//             break;
+//             case 's':Sub();
+//             break;
+//             case 'm':Mul();
+//             break;
+//             case 'd':Div();
+//             break;
+//             case '\n':
+//             break;
+//             default:
+//             printf("no");
+//             break;
+//         }
+//     }
+//     printf("Bye\n");
+//     return 0;
+// }
+
+// #include<stdio.h>
+// #include<ctype.h>
+// int main()
+// {
+//     int ch;
+//     int sum=0;
+//     while((ch=getchar())!=EOF)
+//     {
+//         if(isalpha(ch))
+//         {
+//             sum++;
+//         }
+//     }
+//     printf("%d",sum);
+//     return 0;
+// }
+
+
+
+
+
+// #include<stdio.h>
+// void sort(double* a,double* b,double* c)
+// {
+//     double t=0.0;
+//    if(*a>*b)
+//    {
+//     t=*a;
+//     *a=*b;
+//     *b=t;
+//    }
+//    if(*a>*c)
+//    {
+//     t=*a;
+//     *a=*c;
+//     *c=t;
+//    }
+//    if(*b>*c)
+//    {
+//     t=*b;
+//     *b=*c;
+//     *c=t;
+//    }
+// }
+// int main()
+// {
+//     double num1,num2,num3;
+//     scanf("%lf %lf %lf",&num1,&num2,&num3);
+//     sort(&num1,&num2,&num3);
+//     printf("%lf %lf %lf",num1,num2,num3);
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int Fibonacci(int n)
+// {
+//     int a=1;
+//     int b=1;
+//     int c=0;
+//     if(n<=2)
+//     {
+//         return 1;
+//     }
+//     for(int i=3;i<=n;i++)
+//     {
+//        c=a+b;
+//        a=b;
+//        b=c;
+//     }
+//     return c;
+// }
+// int main()
+// {
+//     int n=0;
+//     scanf("%d",&n);
+//     int m=Fibonacci(n);
+//     printf("%d",m);
+//     return 0;
+// }
+// void is_letter(char c)
+// {
+//     if(c>='A'&&c<='Z')
+//     {
+//         printf("yes %d\n",c-64);
+//     }
+//     if(c>='a'&&c<='z')
+//     {
+//         printf("yes %d\n",c-96);
+//     }
+// }
+// int judge_letter()
+// {
+//     char c;
+//     scanf("%c",c);
+//      if(c>='A'&&c<='Z')
+//     {
+//         return (c-64);
+//     }
+//     else if(c>='a'&&c<='z')
+//     {
+//         return (c-96);
+//     }
+//     else
+//     {
+//         return -1;
+//     }
+// }
+// #include<stdio.h>
+// int main()
+// {
+//     char c;
+//     while(scanf("%c",&c)==1)
+//       {
+//         is_letter(c);
+//         int m=judge_letter();
+//       }
+//       return 0;
+// }
+
+
+
+
+
+// #include<stdio.h>
+// int sort(double arr[],int sz)
+// {
+//     int max=arr[0];
+//     int count=0;
+//     for(int i=0;i<sz;i++)
+//     {
+//         if(arr[i]>max)
+//          {
+//             max=arr[i];
+//             count=i;
+//          }
+//     }
+//     return count;
+// }
+// int main()
+// {
+//     double arr[]={0.2,2.5,0.8,1.2,1.6,1.8};
+//     int sz=sizeof(arr)/sizeof(arr[0]);
+//     int n=sort(arr,sz);
+//     printf("%d",n);
+//     return 0;
+// }
+
+// #include<stdio.h>
+// double sort(double arr[],int sz)
+// {
+//     for(int i=0;i<sz;i++)
+//     {
+//         for(int j=0;j<sz-i-1;j++)
+//         {
+//             if(arr[j]>arr[j+1])
+//             {
+//                 float t=arr[j];
+//                 arr[j]=arr[j+1];
+//                 arr[j+1]=t;
+//             }
+//         }
+//     }
+//     return (arr[sz-1]-arr[0]);
+// }
+// int main()
+// {
+//     double arr[]={0.2,2.5,0.8,1.2,1.6,1.8};
+//     int sz=sizeof(arr)/sizeof(arr[0]);
+//     double n=sort(arr,sz);
+//     printf("%g",n);
+//     return 0;
+// }
+
+// #include<stdio.h>
+// void copy_arr(double target1[],double source[],int n)
+// {
+//     for(int i=0;i<5;i++)
+//     {
+//         target1[i]=source[i];
+//     }
+// }
+// void copy_ptr(double *target2,double *source,int n)
+// {
+//     for(int i=0;i<5;i++)
+//     {
+//         *target2=*source;
+//         target2++;
+//         source++;
+//     }
+// }
+// void copy_ptrs(double *target3,double *source,int *source_end)
+// {
+//     for(int i=0;i<5;i++)
+//     {
+//         *target3=*source;
+//         target3++;
+//         source++;
+//     }
+// }
+// int main()
+// {
+//     double source[5]={0.1,0.2,0.3,0.4,0.5};
+//     double target1[5];
+//     double target2[5];
+//     double target3[5];
+//     copy_arr(target1,source,5);
+//     copy_ptr(target2,source,5);
+//     copy_ptrs(target3,source,source+5);
+// }
+
+
+
+
+
 #include<stdio.h>
 int main()
 {
