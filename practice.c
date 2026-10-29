@@ -657,6 +657,92 @@
 
 
 
+// #include<stdio.h>
+// int main()
+// {
+//     int ch;
+//     int Acount=0,acount=0,count1=0,_count=0;
+//     while((ch=getchar())!=EOF)
+//     {
+//         if(ch <= 'Z' && ch >= 'A')
+//             Acount++;
+//         else if(ch <= 'z' && ch >= 'a')
+//             acount++;
+//         else if(ch <= '9' && ch >= '0')
+//             count1++;
+//         else
+//             _count++;   
+//     } 
+//     printf("%d %d %d %d %d",Acount+acount,Acount,acount,_count,count1);
+//     return 0;
+// }
+
+// #include<stdio.h>
+// void Delete_string (char s[],int sz)
+// {
+//     int i=0;
+//     int j=0;
+//     while(s[i]!='\0')
+//       {
+//         if(s[i]!=' ')
+//         {
+//            s[j]=s[i];
+//            j++;
+//         }
+//          i++;
+//       }
+//       s[j]='\0';
+// }
+// int main()
+// {
+//     char s[100];
+//     int sz=sizeof(s);
+//     while(fgets(s,sz,stdin)!=NULL)
+//     {
+//         if(s[0]=='\n')
+//         {
+//             break;
+//         }
+//         Delete_string(s,sz);
+//         printf("%s",s);
+//     }
+//  return 0;
+// }
+
+// #include<stdio.h>
+// #include<ctype.h>
+// int Atoi(char s[],int sz)
+// {
+//     int i=0;
+//     int sum=0;
+//     while(s[i]!='\0' && s[i]!='\n')
+//     {
+//         if(isdigit(s[i]))
+//         {
+//             sum=sum*10+(s[i]-'0');
+//         }
+//         else
+//             return 0;
+//         i++;    
+//     }
+//     return sum;
+
+// }
+// int main()
+// {
+//     char s[100];
+//     while(fgets(s,sizeof(s),stdin)!=NULL)
+//     {
+//         int num=Atoi(s,sizeof(s));
+//         printf("%d\n",num);
+//     }
+//     return 0;
+// }
+
+
+
+
+
 #include<stdio.h>
 int main()
 {
