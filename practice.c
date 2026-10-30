@@ -743,6 +743,145 @@
 
 
 
+// #include<stdio.h>
+// #include<stdlib.h>
+// int main()
+// {
+//     int arr[20]={0};
+//     for(int seed=1;seed<=10;seed++)
+//     {
+//         for(int i=0;i<=10;i++)
+//         {
+//             arr[i]=0;
+//         }
+//         srand(seed);
+//         for(int i=1;i<=1000;i++)
+//         {
+//            int roll=rand()%11;
+//            arr[roll]++;
+//         }
+//          for(int i=0;i<=10;i++)
+//         {
+//            printf("%d ",arr[i]);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+// #include<stdio.h>
+// #include<stdlib.h>
+// #include<time.h>
+// int arr[20];
+// void Roll_game(int side,int dice,int set)
+// {
+//     srand((unsigned int)time(0));
+//     for(int i=0;i<set;i++)
+//     {
+//         int sum=0;
+//         for(int i=0;i<dice;i++)
+//         {
+//           int roll=rand()%side+1;
+//           sum+=roll;
+//         }
+//        arr[i]=sum;
+//     }
+// }
+// int main()
+// {
+//     int set=0;
+//     int ch;
+//     int side=0,dice=0;
+//     printf("Enter the number of sets;enter q to stop:");
+//     while(scanf("%d",&set)==1)
+//     {
+//         printf("How many sides and how many dice?");
+//         scanf("%d %d",&side,&dice);
+//         printf("Here are %d sets of %d %d-sided throws\n",set,dice,side);
+//         Roll_game(side,dice,set);
+//         for(int i=1;i<=set;i++)
+//         {
+//             printf("%d ",arr[i]);
+//         }
+//         printf("\n");
+//         printf("How many sets? Enter q to stop:");
+//     }
+//     return 0;
+// }
+
+// #include<stdio.h>
+// #include<string.h>
+// #include<stdlib.h>
+// int main()
+// {
+//     int n=0;
+//     printf("How many words do you wish to enter?");
+//     scanf("%d",&n);
+//     getchar();
+//     char **word=(char**)malloc(n*sizeof(char*));
+//     char arr[100];
+//     printf("Enter %d words now:\n",n);
+//     for(int i=0;i<n;i++)
+//     {
+//         scanf("%s",arr);
+//         int len=strlen(arr);
+//         word[i]=(char*)malloc((len+1)*sizeof(char));
+//         strcpy(word[i],arr);
+//     }
+//     printf("Here are your words:\n");
+//     for(int i=0;i<n;i++)
+//     {
+//         printf("%s\n",word[i]);
+//     }
+//     free(word);
+//     return 0;
+// }
+
+
+
+
+
+// #include<stdio.h>
+// #include<stdlib.h>
+// int main()
+// {
+//      int ch;
+//      FILE *fp;
+//      unsigned long count =0;
+//      char filename[100];
+//      printf("请输入用户名:");
+//      scanf("%s",filename);
+//      if((fp = fopen(filename,"r"))==NULL)
+//      {
+//         printf("Can't open %s\n",filename);
+//         exit(EXIT_FAILURE);
+//      }
+//      while((ch==getc(fp))!=EOF)
+//      {
+//          putc(ch,stdout);
+//          count++;
+//      }
+//      fclose(fp);
+//      printf("File %s has %lu characters\n",filename,count);
+//      return 0; 
+// }
+
+
+
+
+
+// #include<stdio.h>
+// int Transfer(char*pbin)
+// {
+//     int sum=0;
+//     while(*pbin!='\0')
+//     {
+//         sum=(sum << 1) + (*pbin - '0');
+//         pbin ++;
+//     }
+//     return sum;
+// }
+
 #include<stdio.h>
 int main()
 {
