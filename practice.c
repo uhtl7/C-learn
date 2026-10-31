@@ -866,6 +866,17 @@
 //      return 0; 
 // }
 
+#include<stdio.h>
+int main()
+{
+    
+}
+
+
+
+
+
+
 
 
 
@@ -882,8 +893,80 @@
 //     return sum;
 // }
 
-#include<stdio.h>
-int main()
-{
-    
-}
+// #include<stdio.h>
+// int is_real(int num,int pos)
+// {
+//     int MASK=1;
+//     num=num>>pos;
+//     if((MASK & num)==1)
+//     {
+//         return 1;
+//     }
+//     else
+//     {
+//         return 0;
+//     }
+// }
+
+// #include<stdio.h>
+// int rotate_l(unsigned int num,int count)
+// {
+//     int bits = 32;
+//     return (num<<count) | (num>>(bits-count)); 
+// }
+
+
+
+
+
+// #include<stdio.h>
+// #define TAVER(m,n) (((1.0/(m))+(1.0/(n)))/2.0)
+// int main()
+// {
+//     int m=2,n=3;
+//     printf("%f",TAVER(2,3));
+//     return 0;
+// } 
+
+// #include<stdio.h>
+// #include<stdlib.h>
+// #include<time.h>
+// void Select(int arr[],int sz,int count)
+// {
+//    for(int i=0;i<count;i++)
+//     {
+//         int roll=rand()%sz;
+//         printf("%d ",arr[roll]);
+//     }
+// }
+// int main()
+// {
+//     srand(time(NULL));
+//     int arr[10];
+//     int sz=0;
+//     scanf("%d",&sz);
+//     for(int i=0;i<sz;i++)
+//     {
+//         scanf("%d",&arr[i]);
+//     }
+//     int count=0;
+//     scanf("%d",&count);
+//     Select(arr,sz,count);
+//     return 0;
+// }
+
+// #include<stdio.h>
+// #include<stdlib.h>
+// #include<stdarg.h>
+// void show_arrary(const double ar[],int n)
+// {
+//     for(int i=0;i<n;i++)
+//     {
+//         printf("%f",ar[i]);
+//     }
+// }
+// double *nwe_d_arrary(int n, ...)
+// {
+//     double *arrary=(double*)malloc(n*sizeof(double));
+//     return arrary;
+// }
